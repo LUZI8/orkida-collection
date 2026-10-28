@@ -1,12 +1,12 @@
 (function () {
   "use strict";
-
+  
   var COLLECTIONS = [
     ["all-products", "الكل"],
-    ["home-products", "منتجات منزلية"],
-    ["car-products", "منتجات السيارات"],
-    ["personal-products", "منتجات شخصية"],
-    ["phone-products", "منتجات التلفون"]
+    ["home-products", "المنزل والمطبخ"],
+    ["car-products", "إكسسوارات السيارات"],
+    ["personal-products", "العناية الشخصية"],
+    ["phone-products", "إكسسوارات الجوال"]
   ];
   var currentPath = location.pathname.replace(/\/+$/, "");
   var activeCollection = COLLECTIONS.find(function(c){ return currentPath === "/collections/" + c[0]; });
